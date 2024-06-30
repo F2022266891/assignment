@@ -6,24 +6,42 @@
     <title>Assinment #2 web technlogy</title>
 <style>
 body{
-    background-color: rgb(147, 179, 193);
+    background-color: rgb(95, 177, 211);
 }
 header{
-    background-color: rgb(97, 92, 102);
-    color: antiquewhite;
+    background-color: rgb(98, 156, 201);
+    border-radius: 20pc;
+    color:white;
     text-align: center;
 
 }
 button{
     button-center: center;
+    text-align: center;
+    color: azure;
+    background-color: rgb(105, 105, 171);
+    border-radius: 10pc;
+}
+img{
+    border-radius: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+form{
+    margin-right: auto;
+    width: 10px;
 }
 </style>
 </head>
 <body>
+    <img src="c:\Users\DELL\OneDrive\Pictures\my pic.jpg" alt="my my pic.jpgpic" height="200px" width="200px"><br>
     <header>
         <h1>Sajjad Ali</h1>
         <h2>Web Developer</h2>
+        
         <p>"Create the bst and strong web sites ."</p>
+        <span id="element"></span>
     </header>
 
     <section id="education">
@@ -112,7 +130,12 @@ button{
             });
         });
     </script>
-
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['<i>Hi!</i> Im a web developer.', 'and video editor.'],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
 </html>
-
